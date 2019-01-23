@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLD500", "HLD500\HLD500.csproj", "{B66E3349-F166-43A7-A2B5-E5A02E76E107}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ALSTTesterSetup", "ALSTTesterSetup\ALSTTesterSetup.vdproj", "{C68614EC-B710-4A1E-B471-E4461BCEE0F2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,8 +13,6 @@ Global
 		{B66E3349-F166-43A7-A2B5-E5A02E76E107}.Debug|x86.Build.0 = Debug|x86
 		{B66E3349-F166-43A7-A2B5-E5A02E76E107}.Release|x86.ActiveCfg = Release|x86
 		{B66E3349-F166-43A7-A2B5-E5A02E76E107}.Release|x86.Build.0 = Release|x86
-		{C68614EC-B710-4A1E-B471-E4461BCEE0F2}.Debug|x86.ActiveCfg = Debug
-		{C68614EC-B710-4A1E-B471-E4461BCEE0F2}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

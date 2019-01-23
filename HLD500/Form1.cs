@@ -77,6 +77,9 @@ namespace HLD500
                  textBoxAuxTable.Text = decode(iniFile.IniReadValue(fName, "基准", "AuxTable"));
                  textBoxUploadTime.Text =decode( iniFile.IniReadValue(fName, "基准", "TimeToUpload"));
 
+
+                 labelUpdateToServer.Text = textBoxUploadTime.Text;
+
                  textBoxRunModeTime.Text = decode(iniFile.IniReadValue(fName, "基准", "运行模式周期"));
                  textBoxStandbyTime.Text = decode(iniFile.IniReadValue(fName, "基准", "待机模式周期"));
                  deviceType =(DeviceType)( uint.Parse(decode(iniFile.IniReadValue(fName, "基准", "DeviceType"))));
@@ -147,6 +150,8 @@ namespace HLD500
 
              //}
 
+            checkBoxAutoUpToServer.Checked = true;
+
         }
 
         private void textBox5_KeyUp(object sender, KeyEventArgs e)
@@ -159,6 +164,10 @@ namespace HLD500
                     textBox5.Text = "";
 
                     textBox5.Focus();
+
+                    timeCnt = uint.Parse(textBoxUploadTime.Text) * 10;
+
+                    timerAutoUpToServer.Enabled = true;
                 }
             }
         }
@@ -274,6 +283,18 @@ namespace HLD500
                                 {
                                     textBoxResult.Text = "超标";
                                     textBoxResult.BackColor = Color.Red;
+
+                                    byte result = InsertGprsData(textBoxTableName.Text);
+                                    if (result == 1)
+                                    {
+                                        textBoxUpToServer.Text = "成功";
+                                        textBoxUpToServer.BackColor = Color.Green;
+                                    }
+                                    else
+                                    {
+                                        textBoxUpToServer.Text = "失败";
+                                        textBoxUpToServer.BackColor = Color.White;
+                                    }
                                 }
                             }
                         }
@@ -323,7 +344,21 @@ namespace HLD500
                             {
                                 textBoxResult.Text = "超标";
                                 textBoxResult.BackColor = Color.Red;
+
+                                byte result = InsertGprsData(textBoxTableName.Text);
+                                if (result == 1)
+                                {
+                                    textBoxUpToServer.Text = "成功";
+                                    textBoxUpToServer.BackColor = Color.Green;
+                                }
+                                else
+                                {
+                                    textBoxUpToServer.Text = "失败";
+                                    textBoxUpToServer.BackColor = Color.White;
+                                }
                             }
+
+ 
                         }
                         catch
                         {
@@ -665,7 +700,7 @@ namespace HLD500
             textBoxUpToServer.Text = "";
             textBoxUpToServer.BackColor = Color.White;
 
-            timeCnt = 50;
+            timeCnt = uint.Parse(textBoxUploadTime.Text)*10;
         }
 
         private void timerAutoUpToServer_Tick(object sender, EventArgs e)
@@ -674,26 +709,28 @@ namespace HLD500
             double tempValue=0;
             bool valueStable = false;
 
-            try
-            {
-              value=double.Parse(textBoxValue.Text);
-              if (Math.Abs(value - valueBackUp) <= 0.1)//简单处理，跳动大时，可取一组数判断最大最小平均值
-              {
-                  valueStable = true;
-              }
-              else
-              {
-                  valueStable = false;
-              }
+            //try
+            //{
+            //  value=double.Parse(textBoxValue.Text);
+            //  if (Math.Abs(value - valueBackUp) <= 0.1)//简单处理，跳动大时，可取一组数判断最大最小平均值
+            //  {
+            //      valueStable = true;
+            //  }
+            //  else
+            //  {
+            //      valueStable = false;
+            //  }
 
-              valueBackUp = value;
-            }
-            catch
-            {
-                value=0;
-            }
+            //  valueBackUp = value;
+            //}
+            //catch
+            //{
+            //    value=0;
+            //}
 
-            if ((valueStable==true)&&(checkBoxAutoUpToServer.Checked == true) && (value > 0) && (textBoxUpToServer.Text == "") && (textBox2.Text != "") && (text485Status.Text == "连接成功"))
+            value = double.Parse(textBoxValue.Text);
+
+            if ((checkBoxAutoUpToServer.Checked == true) && (value > 0) && (textBoxUpToServer.Text == "") && (textBox2.Text != "") && (text485Status.Text == "连接成功"))
             {
                 if (timeCnt >= 1)
                 {
@@ -714,14 +751,16 @@ namespace HLD500
                         textBoxUpToServer.Text = "失败";
                         textBoxUpToServer.BackColor = Color.White;
                     }
-                    timeCnt = 50;
-                    labelUpdateToServer.Text = "5";
+                    timeCnt= uint.Parse(textBoxUploadTime.Text)*10;
+                    labelUpdateToServer.Text = textBoxUploadTime.Text;
+
+                    timerAutoUpToServer.Enabled = false;
                 }
             }
             else
             {
-                timeCnt=50;
-                labelUpdateToServer.Text = "5";
+                timeCnt=uint.Parse(textBoxUploadTime.Text) * 10;
+                labelUpdateToServer.Text = textBoxUploadTime.Text;
             }
         }
 

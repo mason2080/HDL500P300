@@ -153,14 +153,15 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox2.Font = new System.Drawing.Font("宋体", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textBox2.Location = new System.Drawing.Point(12, 209);
+            this.textBox2.Location = new System.Drawing.Point(12, 249);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(985, 62);
+            this.textBox2.Size = new System.Drawing.Size(985, 117);
             this.textBox2.TabIndex = 0;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBoxValue
@@ -177,7 +178,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(11, 47);
+            this.label1.Location = new System.Drawing.Point(363, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 24);
             this.label1.TabIndex = 2;
@@ -195,9 +196,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(212, 2);
+            this.button1.Location = new System.Drawing.Point(428, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(309, 79);
+            this.button1.Size = new System.Drawing.Size(178, 79);
             this.button1.TabIndex = 3;
             this.button1.Text = "上传服务器";
             this.button1.UseVisualStyleBackColor = true;
@@ -325,11 +326,12 @@
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.textBox5.Font = new System.Drawing.Font("宋体", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textBox5.Font = new System.Drawing.Font("宋体", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox5.Location = new System.Drawing.Point(12, 74);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(985, 62);
+            this.textBox5.Size = new System.Drawing.Size(985, 117);
             this.textBox5.TabIndex = 0;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBoxMsg
@@ -353,7 +355,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(987, 640);
+            this.tabControl1.Size = new System.Drawing.Size(986, 640);
             this.tabControl1.TabIndex = 60;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -374,7 +376,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(979, 610);
+            this.tabPage1.Size = new System.Drawing.Size(978, 610);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "主界面";
             // 
@@ -382,7 +384,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(11, 186);
+            this.label5.Location = new System.Drawing.Point(457, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 20);
             this.label5.TabIndex = 2;
@@ -444,7 +446,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(979, 610);
+            this.tabPage2.Size = new System.Drawing.Size(978, 610);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "配置";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -761,10 +763,10 @@
             // textBoxUpToServer
             // 
             this.textBoxUpToServer.Font = new System.Drawing.Font("宋体", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBoxUpToServer.Location = new System.Drawing.Point(749, 1);
+            this.textBoxUpToServer.Location = new System.Drawing.Point(738, 2);
             this.textBoxUpToServer.Multiline = true;
             this.textBoxUpToServer.Name = "textBoxUpToServer";
-            this.textBoxUpToServer.Size = new System.Drawing.Size(259, 79);
+            this.textBoxUpToServer.Size = new System.Drawing.Size(244, 79);
             this.textBoxUpToServer.TabIndex = 5;
             this.textBoxUpToServer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -782,7 +784,7 @@
             // checkBoxAutoUpToServer
             // 
             this.checkBoxAutoUpToServer.AutoSize = true;
-            this.checkBoxAutoUpToServer.Location = new System.Drawing.Point(5, 36);
+            this.checkBoxAutoUpToServer.Location = new System.Drawing.Point(122, 28);
             this.checkBoxAutoUpToServer.Name = "checkBoxAutoUpToServer";
             this.checkBoxAutoUpToServer.Size = new System.Drawing.Size(84, 16);
             this.checkBoxAutoUpToServer.TabIndex = 4;
@@ -793,7 +795,7 @@
             // 
             this.labelUpdateToServer.AutoSize = true;
             this.labelUpdateToServer.Font = new System.Drawing.Font("宋体", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelUpdateToServer.Location = new System.Drawing.Point(134, 28);
+            this.labelUpdateToServer.Location = new System.Drawing.Point(265, 19);
             this.labelUpdateToServer.Name = "labelUpdateToServer";
             this.labelUpdateToServer.Size = new System.Drawing.Size(31, 33);
             this.labelUpdateToServer.TabIndex = 2;
@@ -823,7 +825,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(633, 28);
+            this.label16.Location = new System.Drawing.Point(626, 20);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(106, 24);
             this.label16.TabIndex = 2;
@@ -872,7 +874,6 @@
             // 
             // timerAutoUpToServer
             // 
-            this.timerAutoUpToServer.Enabled = true;
             this.timerAutoUpToServer.Tick += new System.EventHandler(this.timerAutoUpToServer_Tick);
             // 
             // splitContainer1
@@ -990,7 +991,7 @@
             this.splitContainer7.Panel2.Controls.Add(this.textBoxData);
             this.splitContainer7.Panel2.Controls.Add(this.label26);
             this.splitContainer7.Size = new System.Drawing.Size(1341, 640);
-            this.splitContainer7.SplitterDistance = 987;
+            this.splitContainer7.SplitterDistance = 986;
             this.splitContainer7.TabIndex = 61;
             // 
             // label29
@@ -1028,7 +1029,7 @@
             this.splitContainer5.Panel2.Controls.Add(this.label23);
             this.splitContainer5.Panel2.Controls.Add(this.label24);
             this.splitContainer5.Size = new System.Drawing.Size(1370, 56);
-            this.splitContainer5.SplitterDistance = 1013;
+            this.splitContainer5.SplitterDistance = 986;
             this.splitContainer5.TabIndex = 0;
             // 
             // labelMachine
@@ -1056,7 +1057,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label24.Location = new System.Drawing.Point(-1, 31);
+            this.label24.Location = new System.Drawing.Point(3, 31);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(105, 21);
             this.label24.TabIndex = 2;

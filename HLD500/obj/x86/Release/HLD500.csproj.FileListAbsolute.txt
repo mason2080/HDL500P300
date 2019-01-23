@@ -12,3 +12,13 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\HLD500\HLD500\obj\x
 C:\Users\Administrator\Desktop\HDL500\HDL500P300\HLD500\bin\Release\HLD500.exe.config
 C:\Users\Administrator\Desktop\HDL500\HDL500P300\HLD500\obj\x86\Release\HLD500.exe
 C:\Users\Administrator\Desktop\HDL500\HDL500P300\HLD500\obj\x86\Release\HLD500.pdb
+E:\GitHub\HDL500P300\HLD500\bin\Release\HLD500.exe.config
+E:\GitHub\HDL500P300\HLD500\obj\x86\Release\HLD500.exe
+E:\GitHub\HDL500P300\HLD500\obj\x86\Release\HLD500.pdb
+E:\GitHub\HDL500P300\HLD500\bin\Release\HLD500.exe
+E:\GitHub\HDL500P300\HLD500\bin\Release\HLD500.pdb
+E:\GitHub\HDL500P300\HLD500\obj\x86\Release\HLD500.Form1.resources
+E:\GitHub\HDL500P300\HLD500\obj\x86\Release\HLD500.LogIn.resources
+E:\GitHub\HDL500P300\HLD500\obj\x86\Release\HLD500.Properties.Resources.resources
+E:\GitHub\HDL500P300\HLD500\obj\x86\Release\HLD500.SelectDevice.resources
+E:\GitHub\HDL500P300\HLD500\obj\x86\Release\HLD500.csproj.GenerateResource.Cache
